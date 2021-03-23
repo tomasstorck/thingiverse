@@ -1,17 +1,25 @@
 // Created by Tomas Storck (github.com/tomasstorck)
 // Licensed via Creative Commons Attribution-ShareALike license (CC BY-SA)
 
-// Independent parameters. Set these as you will.
-r_long = 10;                // [mm] Half of centre-centre distance between hexagons == length of side == distance from centre to furthest corner.
-thickness_hexagon = 1.0;    // [mm] How tall (Z) each hexagon is.
-thickness_connection = 0.7; // [mm] Of each triangle connection between two hexagons.
-thickness_wall = 1.5;       // [mm] Of each enclosing side of the print.
-width_connection = 1;       // [mm] Base of triangle.
-width_wall = 2;             // [mm] Broadness (X or Y).
-spacing = 0.8;              // [mm] Spacing between hexagons.
-n_x = 13;                   // [-] Number of hexagons in the X direction.
-n_y = 12;                   // [-]
-
+/* [Independent parameters. Set these as you will] */
+// [mm] Half of centre-centre distance between hexagons == length of side == distance from centre to furthest corner.
+r_long = 10;
+// [mm] How tall (Z) each hexagon is.
+thickness_hexagon = 1.0;
+// [mm] Of each triangle connection between two hexagons.
+thickness_connection = 0.7;
+// [mm] Of each enclosing side of the print.
+thickness_wall = 1.5;
+// [mm] Base of triangle.
+width_connection = 1;
+// [mm] Broadness (X or Y).
+width_wall = 2;
+// [mm] Spacing between hexagons.
+spacing = 0.8;
+// [-] Number of hexagons in the X direction.
+n_x = 13;  // [2:1:50]
+// [-]
+n_y = 12;  // [2:1:50]
 
 // Dependent parameters. You should not have to modify these.
 r_short = cos(30)*r_long;  // [mm] Shortest length from centre of hexagon to side.
